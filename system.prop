@@ -1,18 +1,14 @@
-# Art
-dalvik.vm.dex2oat-flags=--no-watch-dog
-ro.config.max_starting_bg=8
-
 # ActivityManager
-ro.sys.fw.use_trim_settings=true
+ro.sys.fw.use_trim_settings=false
 
 # Audio
-av.offload.enable=true
-av.streaming.offload.enable=true
+av.offload.enable=false
+av.streaming.offload.enable=false
 audio.offload.buffer.size.kb=64
-audio.offload.gapless.enabled=true
+audio.offload.gapless.enabled=false
 audio.offload.min.duration.secs=30
 audio.offload.pcm.16bit.enable=false
-audio.offload.pcm.24bit.enable=true
+audio.offload.pcm.24bit.enable=false
 use.voice.path.for.pcm.voip=true
 vidc.enc.narrow.searchrange=1
 ro.qc.sdk.audio.fluencetype=none
@@ -52,7 +48,7 @@ mm.enable.smoothstreaming=true
 mm.disable.sec_smoothstreaming=true
 media.aac_51_output_enabled=true
 drm.service.enabled=1
-media.stagefright.legacyencoder=true
+media.stagefright.legacyencoder=false
 media.stagefright.less-secure=true
 
 # NITZ
@@ -78,10 +74,8 @@ rild.libargs=-d /dev/smd0
 ro.telephony.call_ring.multiple=false
 ro.use_data_netmgrd=true
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-ro.telephony.default_network=9
-persist.radio.custom_ecc=1
-persist.radio.ecc_hard_1=998
-persist.radio.ecc_hard_count=1
+ro.telephony.default_network=4
+persist.radio.custom_ecc=0
 
 # Storage
 ro.sys.sdcardfs=true
@@ -92,11 +86,6 @@ persist.timed.enable=true
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
-
-#Enable B service adj transition by default
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
 
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
